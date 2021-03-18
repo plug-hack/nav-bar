@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    font-family: sans-serif;
+}
+
+.menu-bar{
+    background: green;
+    text-align: center;
+   
+    width: 100%;
+}
+
+.menu-bar ul{
+    color: #fff;
+    list-style: none;
+    display: inline-flex;
+}
+
+.menu-bar ul li{
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-bar ul li:hover{
+    background: rgb(62, 245, 55);
+    border-radius: 3px;
+}
+
+.menu-bar .fas{
+    margin-right: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background: rgb(0, 100, 0);
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;   
+    background: transparent;
+    text-align: left;
+    padding: 10px;
+}
+
+.hover-me{
+    position: absolute;
+}
+
+.sub-menu-3{
+    display: none;
+}
+
+
+.menu-bar-2{
+    background: red;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.menu-bar-2 ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.menu-bar-2 ul li{
+    padding: 15px;
+    margin: 15px;
+}
+
+.menu-bar-2 ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-bar-2 ul li .sub-menu-2{
+    position: absolute;
+}
+
+.menu-bar-2 ul li .sub-menu-2 ul{
+     display: none; 
+    background: blue;
+}
+
+.menu-bar-2 ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin-bottom: 0px;
+}
